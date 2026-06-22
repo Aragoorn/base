@@ -1,0 +1,32 @@
+# 🗳️ Base Alpha Governance DAO
+
+A decentralized governance protocol built for the **Base** network. This smart contract enables transparent proposal creation, community voting, and administrative execution.
+
+## 🔗 Contract Details
+* **Network:** Base
+* **Contract Address:** [0x16f01AaB8f2d3Ab7ae1CaFEB68b6C1BD20A9b5d4](https://basescan.org/address/0x16f01AaB8f2d3Ab7ae1CaFEB68b6C1BD20A9b5d4)
+* **Compiler:** Solidity 0.8.34
+* **License:** MIT
+
+## 📋 Features
+* **Proposal Management:** Admins can create time-bound proposals.
+* **Transparent Voting:** Users can cast votes (For/Against) once per proposal.
+* **Execution Logic:** Proposals can be executed only after the voting period ends.
+* **Admin Control:** Secure ownership transfer functionality included.
+
+## 🛠️ Smart Contract Functions
+
+### 1. `createProposal(string _description, uint256 _duration)`
+Allows the admin to initiate a new governance topic with a specific duration (in minutes).
+
+### 2. `castVote(uint256 _proposalId, bool _support)`
+Public function enabling users to participate in governance by voting for or against a proposal.
+
+### 3. `executeProposal(uint256 _proposalId)`
+Finalizes the proposal process once the voting duration has elapsed.
+
+### 4. `transferOwnership(address _newAdmin)`
+Ensures secure management of the DAO governance contract.
+
+---
+*Built to enhance on-chain participation on the Base network. Developed by @Aragoorn.*
